@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Energy Solutions"/>
+    <meta name="theme-color" content="#00539e" />
+    <link rel="shortcut icon" href="https://www.johnsoncontrols.com/-/media/jci/corp/homepage/images/jci_180x180.png" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Primary Meta Tags -->
+    <title>Energy Solutions | JCI Arabia</title>
+    <meta name="title" content="Energy Solutions | JCI Arabia" />
+    <meta name="keywords" content="Energy Solutions" />
+    <meta
+      name="description"
+      content="Energy Solutions | JCI Arabia"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Energy Solutions | JCI Arabia" />
+    <meta
+      property="og:description"
+      content="Energy Solutions | JCI Arabia"
+    />
+    <meta property="og:image" content="https://www.johnsoncontrols.com/-/media/jci/corp/homepage/images/jci_180x180.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Energy Solutions | JCI Arabia" />
+    <meta
+      property="twitter:description"
+      content="Energy Solutions | JCI Arabia"
+    />
+    <meta property="twitter:image" content="https://www.johnsoncontrols.com/-/media/jci/corp/homepage/images/jci_180x180.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container">
+        <div class="nav">
+          <div class="logo">
+            <img
+              src="img/logo-white.png"
+              alt="Al Salem Johnson Controls Logo"
+            />
+          </div>
+          <div class="info">
+            <div class="request">
+              <button class="req">Contact Us</button>
+            </div>
+            <!-- <div class="lang ara">
+              <a href="ducted-ar.html">العربية</a>
+            </div> -->
+          </div>
+          <div class="info-mob">
+            <div class="toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="info-more">
+              <div class="request">
+                <button class="req">Contact Us</button>
+              </div>
+              <!-- <div class="lang ara">
+                <a href="ducted-ar.html">العربية</a>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Form -->
+    <div class="pop-form">
+      <div class="container">
+        <div class="pop-content">
+          <div class="formbox">
+            <h2 class="formbox-title">Contact Our Engineers for a Free Energy Audit</h2>
+            <form>
+              <div class="combin">
+                <div class="input-box">
+                  <p>First Name</p>
+                  <input type="text" placeholder="Mohamed" required />
+                </div>
+                <div class="input-box">
+                  <p>Last Name</p>
+                  <input type="text" placeholder="Ali" required />
+                </div>
+              </div>
+              <div class="combin">
+                <div class="input-box">
+                  <p>Email</p>
+                  <input type="email" placeholder="mohamed@jci.com" required />
+                </div>
+                <div class="input-box">
+                  <p>Mobile Number</p>
+                  <input type="number" placeholder="0123456789" required />
+                </div>
+              </div>
+              <div class="form-groups">
+                <p>Type of Facility</p>
+                <div>
+                  <select id="selector" onchange="yesnoCheck(this);">
+                    <option selected="selected" disabled="">
+                      Type of Facility
+                    </option>
+                    <option value="Commercial Center">Commercial Center</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Office Building">Office Building</option>
+                    <option value="Residential Building">Residential Building</option>
+                    <option value="Factory">Factory</option>
+                    <option value="Refrigerated Warehouses">Refrigerated Warehouses</option>
+                    <option value="other">Other - Please Specify </option>
+                </select>
+                </div>
+            
+            <div id="otherOne" style="display: none;">
+                <div class="form-groups down-tp">
+                  <div class="input-box">
+                    <p>Please Specify</p>
+                    <input
+                      type="text"
+                      placeholder="Please Specify"
+                      required
+                    />
+                  </div>
+                </div>
+            </div>
+              </div>
+              <div class="form-groups">
+                <p>Type of Equipment</p>
+                <div class="dropdown" data-control="checkbox-dropdown">
+                  <label class="dropdown-label">Select</label>
+                  
+                  <div class="dropdown-list">
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                      Chillers
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                      Packaged Units 
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                      Split Units 
+                    </label>
+                    
+                    <label class="dropdown-option">
+                      <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                      Others
+                    </label>     
+                  </div>
+                  </div>
+              </div>
+              <div class="form-groups">
+                <div class="input-box">
+                  <p>Project Location / Cities</p>
+                  <input
+                    type="text"
+                    placeholder="Project Location / Cities"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-groups">
+                <p>Preferred Time to Call?</p>
+                <select class="form-control" id="call">
+                  <option selected="selected" disabled="">
+                    Preferred Time to Call?
+                  </option>
+                  <option value="10:00 - 12:00">10:00 - 12:00 AM</option>
+                  <option value="12:00 - 02:00">12:00 - 02:00 PM</option>
+                  <option value="02:00 - 04:00">02:00 - 04:00 PM</option>
+                  <option value="04:00 - 06:00">04:00 - 06:00 PM</option>
+                </select>
+              </div>
+              <div class="input-boxs">
+                <input type="submit" class="send" value="Send">
+                <button class="cancel">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Form -->
+
+    <!-- Hero -->
+    <div class="chiller">
+      <div class="container">
+        <div class="details">
+          <div class="side-info">
+            <div class="info">
+              <h1>Energy Efficiency Solutions</h1>
+              <!-- <p>Pioneering Energy Efficient Solutions</p> -->
+            </div>
+          </div>
+          <div class="side-form">
+            <div class="pop-content">
+              <div class="formbox">
+                <h2 class="formbox-titles">Contact Our Engineers for a Free Energy Audit</h2>
+                <form>
+                  <div class="combin">
+                    <div class="input-box">
+                      <p>First Name</p>
+                      <input type="text" placeholder="Mohamed" required />
+                    </div>
+                    <div class="input-box">
+                      <p>Last Name</p>
+                      <input type="text" placeholder="Ali" required />
+                    </div>
+                  </div>
+                  <div class="combin">
+                    <div class="input-box">
+                      <p>Email</p>
+                      <input type="email" placeholder="mohamed@jci.com" required />
+                    </div>
+                    <div class="input-box">
+                      <p>Mobile Number</p>
+                      <input type="number" placeholder="0123456789" required />
+                    </div>
+                  </div>
+                  <div class="form-groups">
+                    <p>Type of Facility</p>
+                    <div>
+                      <select id="selector" onchange="yesnoCheck1(this);">
+                        <option selected="selected" disabled="">
+                          Type of Facility
+                        </option>
+                        <option value="Commercial Center">Commercial Center</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Office Building">Office Building</option>
+                        <option value="Residential Building">Residential Building</option>
+                        <option value="Factory">Factory</option>
+                        <option value="Refrigerated Warehouses">Refrigerated Warehouses</option>
+                        <option value="other">Other - Please Specify </option>
+                    </select>
+                    </div>
+                
+                <div id="otherOne1" style="display: none;">
+                    <div class="form-groups down-tp">
+                      <div class="input-box">
+                        <p>Please Specify</p>
+                        <input
+                          type="text"
+                          placeholder="Please Specify"
+                          required
+                        />
+                      </div>
+                    </div>
+                </div>
+                  </div>
+                  <div class="form-groups">
+                    <p>Type of Equipment</p>
+                    <div class="dropdown" data-control="checkbox-dropdown">
+                      <label class="dropdown-label">Select</label>
+                      
+                      <div class="dropdown-list">
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 1" />
+                          Chillers
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 2" />
+                          Packaged Units 
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 3" />
+                          Split Units 
+                        </label>
+                        
+                        <label class="dropdown-option">
+                          <input type="checkbox" name="dropdown-group" value="Selection 4" />
+                          Others
+                        </label>     
+                      </div>
+                      </div>
+                  </div>
+                  <div class="form-groups">
+                    <div class="input-box">
+                      <p>Project Location / Cities</p>
+                      <input
+                        type="text"
+                        placeholder="Project Location / Cities"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-groups">
+                    <p>Preferred Time to Call?</p>
+                    <select class="form-control" id="call">
+                      <option selected="selected" disabled="">
+                        Preferred Time to Call?
+                      </option>
+                      <option value="10:00 - 12:00">10:00 - 12:00 AM</option>
+                      <option value="12:00 - 02:00">12:00 - 02:00 PM</option>
+                      <option value="02:00 - 04:00">02:00 - 04:00 PM</option>
+                      <option value="04:00 - 06:00">04:00 - 06:00 PM</option>
+                    </select>
+                  </div>
+                  <div class="input-boxs">
+                    <input type="submit" class="send" value="Send">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Hero -->
+
+    <div class="features send">
+      <div class="container">
+        <div class="top-header">
+          <h2>The Energy Solutions experts at JCI Arabia partner with customers to improve the performance of their buildings/environments and the people within.</h2>
+        </div>
+        <div class="boxs">
+          <div class="box">
+            <img src="img/avoided.svg" alt="Total Avoided">
+            <h3>+263M</h3>
+            <p>Total Avoided kWh</p>
+          </div>
+          <div class="box">
+            <img src="img/barrel.svg" alt="Barrel of Oil">
+            <h3>+431K</h3>
+            <p>Barrel of Oil Equivalent BOE</p>
+          </div>
+          <div class="box">
+            <img src="img/emissions.svg" alt="CO2 Emissions">
+            <h3>+186K</h3>
+            <p>Avoided CO2 Emissions (Metric Tons)</p>
+          </div>
+          <div class="box">
+            <img src="img/tree.svg" alt="Tree Seedlings">
+            <h3>+3M</h3>
+            <p>Tree Seedlings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+      <!-- History -->
+      <div class="history fist">
+        <div class="container">
+          <div class="histy">
+            <div class="his-img">
+              <img
+                src="img/services.png"
+                alt="Full Range of Services"
+              />
+            </div>
+            <div class="his-info">
+              <div>
+                <h4>We offer a variety of services, products, and solutions to help businesses save energy and money, while also reducing their CO2 impact on the environment. We do this through energy efficiency improvements including lighting, upgrades to HVAC, controls and more.</h4>
+              </div>
+              <div class="features">
+                <div>
+                  <div class="boxs boxy boxx">
+                    <div class="box">
+                      <img src="img/lighting.svg" alt="Lighting">
+                      <div class="box-det">
+                        <p>Lighting retrofit & lighting controls</p>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="img/upgrade.svg" alt="Upgrades">
+                      <p>Upgrades or replacement
+                        of HVAC equipment
+                      </p>
+                    </div>
+                    <div class="box">
+                      <img src="img/plug.svg" alt="Plug">
+                      <p>Plug Load Management
+                      </p>
+                    </div>
+                    <div class="box">
+                      <img src="img/building.svg" alt="Building">
+                      <div class="box-det">
+                        <p>Building management
+                          system upgrades</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="boxs boxy boxx">
+                    <div class="box">
+                      <img src="img/insulation.svg" alt="Insulation">
+                      <div class="box-det">
+                        <p>Insulation and other building
+                          envelope upgrades</p>
+                      </div>
+                    </div>
+                    <div class="box">
+                      <img src="img/renewable.svg" alt="Renewable">
+                      <p>Renewable energy
+                      </p>
+                    </div>
+                    <div class="box">
+                      <img src="img/water.svg" alt="Water Conservation">
+                      <p>Water Conservation
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- History -->
+      <div class="history">
+        <div class="container">
+          <div class="histy">
+            
+            <div class="his-info">
+              <div>
+                <h2>Understand the Goals for your Organization and Stakeholders
+                </h2>
+                <ul>
+                  <li>• Preliminary audit / Site visit / Benchmark analysis</li>
+                  <li>• Your commitment to proceed</li>
+                  <li>• Detailed engineering audit Result: Customized solution designed to save energy and meet your goals</li>
+                </ul>
+                <p class="heady"><strong>Energy Performance Contract with Energy Saving Guarantee Improvements such as:</strong></p>
+                <div class="features">
+                  <div>
+                    <div class="boxs boxy boxx">
+                      <div class="box">
+                        <img src="img/lighting.svg" alt="Lighting">
+                        <div class="box-det">
+                          <p>Lighting</p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <img src="img/upgrade.svg" alt="HVAC">
+                        <p>HVAC
+                        </p>
+                      </div>
+                      <div class="box">
+                        <img src="img/insulation.svg" alt="Buliding Management System">
+                        <div class="box-det">
+                          <p>Buliding Management System</p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="boxs boxy boxx">
+                      <div class="box">
+                        <img src="img/water2.svg" alt="Water">
+                        <p>Water
+                        </p>
+                      </div>
+                      <div class="box">
+                        <img src="img/renewable-energy.svg" alt="Renewable Energy">
+                        <p>Renewable Energy
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="heady"><strong>Meet Your Goals and validate with ongoing reporting</strong></p>
+                <div class="features fehty">
+                  <div>
+                    <div class="boxs boxy boxx">
+                      <div class="box">
+                        <div class="box-det">
+                          <h4>Improved</h4>
+                          <p>budget and lower
+                            energy use</p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="box-det">
+                          <h4>Lower</h4>
+                          <p>maintenance, repair
+                            and waste costs</p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="box-det">
+                          <h4>Reduced</h4>
+                          <p>enviromental
+                            impact
+                            and emissions</p>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="box-det">
+                          <h4>Engaged</h4>
+                          <p>and productive
+                            employees</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="his-img">
+              <img
+                src="img/organization-bg.jpg"
+                alt="Understand the Goals for your Organization and Stakeholders"
+              />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+   
+
+            <!-- History -->
+            <div class="history accr">
+              <div class="container">
+                <div class="histy">
+                  <div class="his-img">
+                    <img
+                      src="img/leed-certified.jpeg"
+                      alt="Help customers obtain their required certifications"
+                    />
+                  </div>
+                  <div class="his-info">
+                    <div class="accordion-wrapper">
+                      <div class="accordion">
+                        <input type="radio" name="radio-a" id="check1" checked>
+                        <label class="accordion-label" for="check1">LEED Certified</label>
+                        <div class="accordion-content">
+                          <p>We offer audits and help customers obtain their required certifications as members.</p>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <input type="radio" name="radio-a" id="check2">
+                        <label class="accordion-label" for="check2">USGBC Certified</label>
+                        <div class="accordion-content">
+                          <p>The gold standard for measuring energy efficiency and sustainability.
+                            Certified by the US Green Building Council, proves that we design and build sustainable projects to reduce negative environmental impacts and improve the health and well-being of the people who use it. USGBC-certified ESCO buildings consume less energy, save money, and have a smaller environmental footprint.</p>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <input type="radio" name="radio-a" id="check3">
+                        <label class="accordion-label" for="check3">Guaranteed Operation Service</label>
+                        <div class="accordion-content">
+                          <p>We’re Worthy of Your Trust.
+                            Because we care, Initially, we offer free preliminary reports. JCI Arabia funds your project to be reimbursed in installments from the saved amounts. If you’re not interested in proceeding, you’ll only afford the Audit (Manhours). If you’re interested, we provide you with a guaranteed contract.</p>
+                        </div>
+                      </div>
+                      <div class="accordion">
+                        <input type="radio" name="radio-a" id="check4">
+                        <label class="accordion-label" for="check4">Social Responsibility</label>
+                        <div class="accordion-content">
+                          <p>Leading Operational Environment-friendly Solutions.
+                            Implementing innovative technologies to further reduce energy consumption is our goal. At ESCO, we are committed to operating your business in a sustainable and responsible manner. We focus on reducing your environmental impact, supporting effective operations, and promoting innovation.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+
+    <!-- End History -->
+
+    <div class="features perform">
+      <div class="container">
+        <div class="top-header">
+          <h2>Energy Efficiency Trends, Environment & Economy</h2>
+          <p>We convert energy efficiency into reality, by keeping facility upgrades within financial reach</p>
+        </div>
+        <div class="boxs">
+          <div class="box">
+            <img src="img/performance.svg" alt="Performance Assurance">
+            <h3>Performance Assurance</h3>
+            <ul>
+              <li>Validates savings</li>
+              <li>Provides effective communications</li>
+            </ul>
+          </div>
+          <div class="box">
+            <img src="img/upgrades.svg" alt="Facility Audits">
+            <h3>Facility Audits</h3>
+            <p>Improve efficiency of building envelope and essential systems, including lighting, HVAC, and water</p>
+          </div>
+          <div class="box">
+            <img src="img/cost.svg" alt="Low-Cost funding">
+            <h3>Low-Cost funding</h3>
+            <ul>
+              <li>Project Management and Execution excellent</li>
+              <li>Lower Shutdown</li>
+              <li>Continuous monitoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Request -->
+    <div class="fixed-req">
+      <button class="req">Contact Us</button>
+    </div>
+
+    <!-- End Fixed Request -->
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        © <span class="year"></span> Johnson Controls Arabia. All rights
+        reserved.
+      </p>
+    </div>
+
+    <!-- End Footer -->
+  <!-- scripts -->  
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+      (function($) {
+  var CheckboxDropdown = function(el) {
+    var _this = this;
+    this.isOpen = false;
+    this.areAllChecked = false;
+    this.$el = $(el);
+    this.$label = this.$el.find('.dropdown-label');
+    this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+    this.$inputs = this.$el.find('[type="checkbox"]');
+    
+    this.onCheckBox();
+    
+    this.$label.on('click', function(e) {
+      e.preventDefault();
+      _this.toggleOpen();
+    });
+    
+    this.$checkAll.on('click', function(e) {
+      e.preventDefault();
+      _this.onCheckAll();
+    });
+    
+    this.$inputs.on('change', function(e) {
+      _this.onCheckBox();
+    });
+  };
+  
+  CheckboxDropdown.prototype.onCheckBox = function() {
+    this.updateStatus();
+  };
+  
+  CheckboxDropdown.prototype.updateStatus = function() {
+    var checked = this.$el.find(':checked');
+    
+    this.areAllChecked = false;
+    this.$checkAll.html('Check All');
+    
+    if(checked.length <= 0) {
+      this.$label.html('Select Options');
+    }
+    else if(checked.length === 1) {
+      this.$label.html(checked.parent('label').text());
+    }
+    else if(checked.length === this.$inputs.length) {
+      this.$label.html('All Selected');
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+    }
+    else {
+      this.$label.html(checked.length + ' Selected');
+    }
+  };
+  
+  CheckboxDropdown.prototype.onCheckAll = function(checkAll) {
+    if(!this.areAllChecked || checkAll) {
+      this.areAllChecked = true;
+      this.$checkAll.html('Uncheck All');
+      this.$inputs.prop('checked', true);
+    }
+    else {
+      this.areAllChecked = false;
+      this.$checkAll.html('Check All');
+      this.$inputs.prop('checked', false);
+    }
+    
+    this.updateStatus();
+  };
+  
+  CheckboxDropdown.prototype.toggleOpen = function(forceOpen) {
+    var _this = this;
+    
+    if(!this.isOpen || forceOpen) {
+       this.isOpen = true;
+       this.$el.addClass('on');
+      $(document).on('click', function(e) {
+        if(!$(e.target).closest('[data-control]').length) {
+         _this.toggleOpen();
+        }
+      });
+    }
+    else {
+      this.isOpen = false;
+      this.$el.removeClass('on');
+      $(document).off('click');
+    }
+  };
+  
+  var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+  for(var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+    new CheckboxDropdown(checkboxesDropdowns[i]);
+  }
+})(jQuery);
+
+
+function yesnoCheck(that) 
+{
+    if (that.value == "other") 
+    {
+        document.getElementById("otherOne").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("otherOne").style.display = "none";
+    }
+}
+function yesnoCheck1(that) 
+{
+    if (that.value == "other") 
+    {
+        document.getElementById("otherOne1").style.display = "block";
+    }
+    else
+    {
+        document.getElementById("otherOne1").style.display = "none";
+    }
+}
+    </script>
+  </body>
+</html>
